@@ -55,11 +55,11 @@ print(f'dwarf1 name is {dwarf1.name}')
 print(f'dwarf2 name is {dwarf2.name}')
 
 dwarf1.name = 'New name'
-print('dwarf1 = dwarf2')
+print('dwarf1.name = "New name"')
 print(f'dwarf1 name is {dwarf1.name}')
 print(f'dwarf2 name is {dwarf2.name}')
 
 dwarf2.name = 'Robert'
-print('dwarf1 = dwarf2')
+print('dwarf2.name = "Robert"')
 print(f'dwarf1 name is {dwarf1.name}')
 print(f'dwarf2 name is {dwarf2.name}')

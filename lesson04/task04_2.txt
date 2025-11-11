@@ -1,0 +1,27 @@
+В приведенном примере
+class Animal:
+    def foo(self):
+        pass
+
+class Cat(Animal):
+    def foo(self):
+        print("Кошка мурлычет")
+
+class Bird(Animal):
+    def foo(self):
+        print("Птица поет")
+
+def do_something_with_animal(animal: Animal):
+    animal.foo()
+
+cat = Cat()
+bird = Bird()
+
+do_something_with_animal(cat)
+do_something_with_animal(bird)
+
+имеем следующую картину:
+
+В классах Cat и Bird полиморфизм подтипов - дочерние классы переопределяют поведение метода foo родителя
+функция do_something_with_animal демонстрирует второй тип полиморфизма - параметрический полиморфизм,
+когда "одна и та же функция (один и тот же код)" одинаково работает с параметрами разных типов
